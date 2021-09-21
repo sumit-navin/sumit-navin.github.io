@@ -157,3 +157,13 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+function getMailLink(){
+    const contactName=document.getElementById("contact-name"),
+          contactEmail=document.getElementById("contact-email"),
+          contactProject=document.getElementById("contact-project")
+    const emailSubject = "subject=".concat(contactName).concat("|").concat(contactEmail).concat("|").concat(contactProject)
+    const emailBody = "body=".concat(document.getElementById("contact-message"))
+    const link = "mailto: sumitnavin@gmail.com?".concat(emailSubject).concat("&").concat(emailBody)
+    return link
+}
