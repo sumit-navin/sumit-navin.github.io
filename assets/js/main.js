@@ -159,11 +159,12 @@ themeButton.addEventListener('click', () => {
 })
 
 function getMailLink(){
-    const contactName=document.getElementById("contact-name"),
-          contactEmail=document.getElementById("contact-email"),
-          contactProject=document.getElementById("contact-project")
+    const contactName=document.getElementById("contact-name").value,
+          contactEmail=document.getElementById("contact-email").value,
+          contactProject=document.getElementById("contact-project").value,
+          emailMessage=document.getElementById("contact-message").value
     const emailSubject = "subject=".concat(contactName).concat("|").concat(contactEmail).concat("|").concat(contactProject)
-    const emailBody = "body=".concat(document.getElementById("contact-message"))
+    const emailBody = "body=".concat(emailMessage)
     const link = "mailto: sumitnavin@gmail.com?".concat(emailSubject).concat("&").concat(emailBody)
     return link
 }
