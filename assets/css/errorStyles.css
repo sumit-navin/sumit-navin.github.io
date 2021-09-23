@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   /* background: rgba(20, 46, 65, 1); */
-  background: rgba(110,87,224,1);
+  background: hsl(218, 69%, 61%);
   font-family: "Oswald", sans-serif;
   background: -webkit-canvas(noise);
   background: -moz-element(#canvas);
