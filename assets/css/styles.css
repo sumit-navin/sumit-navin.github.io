@@ -502,8 +502,19 @@ header{
     width: 90%;
 }
 .skills__groovy{
+    width: 90%;
+}
+.skills__grails{
     width: 70%;
 }
+.skills__spring{
+    width: 80%;
+}
+.skills__hibernate{
+    width: 80%;
+}
+
+
 .skills__node{
     width: 70%;
 }
@@ -528,15 +539,16 @@ header{
     width: 80%;
 }
 
-.skills__spring{
+.skills__photoshop{
+    width: 90%;
+}
+.skills__illustartor{
     width: 80%;
 }
-.skills__grails{
-    width: 70%;
+.skills__indesign{
+    width: 75%;
 }
-.skills__hibernate{
-    width: 80%;
-}
+
 
 .skills__close .skills__list{
     height: 0;
